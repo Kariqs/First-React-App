@@ -1,0 +1,9 @@
+.expenses {
+    max-width: 95vw;
+    width: 750px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.84);
+  }
