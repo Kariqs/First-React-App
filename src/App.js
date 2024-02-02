@@ -1,7 +1,9 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
+  const date = new Date();
   const expenses = [
     {
       id: "e1",
@@ -20,7 +22,8 @@ function App() {
   return (
     <div className="main">
       <h2 className="h2">Expense Tracker</h2>
-      <Expenses expenses={expenses}/>
+      <NewExpense date={date} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
