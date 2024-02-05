@@ -19,10 +19,16 @@ function App() {
       price: 3500000,
     },
   ];
+
+  const addExpense = (expense) => {
+    console.log("App.js");
+    console.log(expense);
+  };
+
   return (
     <div className="main">
       <h2 className="h2">Expense Tracker</h2>
-      <NewExpense date={date} />
+      <NewExpense date={date} onAddExpense={addExpense} />
       <Expenses expenses={expenses} />
     </div>
   );
